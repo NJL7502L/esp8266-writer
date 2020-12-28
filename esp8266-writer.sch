@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J?
-U 1 1 5FE9AF69
-P 7000 4300
-F 0 "J?" H 7050 4617 50  0000 C CNN
-F 1 "esp8266_conn" H 7050 4526 50  0000 C CNN
-F 2 "" H 7000 4300 50  0001 C CNN
-F 3 "~" H 7000 4300 50  0001 C CNN
-	1    7000 4300
-	1    0    0    -1  
-$EndComp
 Text GLabel 7400 4500 2    50   Input ~ 0
 Rx
 Wire Wire Line
@@ -37,23 +26,23 @@ Wire Wire Line
 Wire Wire Line
 	6700 4400 6800 4400
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J4
 U 1 1 5FE9CBB2
 P 4300 4550
-F 0 "J?" H 4408 4731 50  0000 C CNN
+F 0 "J4" H 4408 4731 50  0000 C CNN
 F 1 "ArduinoRxD" H 4408 4640 50  0000 C CNN
-F 2 "" H 4300 4550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 4550 50  0001 C CNN
 F 3 "~" H 4300 4550 50  0001 C CNN
 	1    4300 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J3
 U 1 1 5FE9D06E
 P 4300 4250
-F 0 "J?" H 4408 4431 50  0000 C CNN
+F 0 "J3" H 4408 4431 50  0000 C CNN
 F 1 "ArduinoTxD" H 4408 4340 50  0000 C CNN
-F 2 "" H 4300 4250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 4250 50  0001 C CNN
 F 3 "~" H 4300 4250 50  0001 C CNN
 	1    4300 4250
 	1    0    0    -1  
@@ -63,23 +52,23 @@ Tx
 Wire Wire Line
 	4500 4250 5050 4250
 $Comp
-L Device:R R?
+L Device:R R1
 U 1 1 5FE9F329
 P 4700 4550
-F 0 "R?" V 4493 4550 50  0000 C CNN
+F 0 "R1" V 4493 4550 50  0000 C CNN
 F 1 "1k" V 4584 4550 50  0000 C CNN
-F 2 "" V 4630 4550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4630 4550 50  0001 C CNN
 F 3 "~" H 4700 4550 50  0001 C CNN
 	1    4700 4550
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 5FE9F49F
 P 4900 4750
-F 0 "R?" H 4830 4704 50  0000 R CNN
+F 0 "R2" H 4830 4704 50  0000 R CNN
 F 1 "2.2k" H 4830 4795 50  0000 R CNN
-F 2 "" V 4830 4750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4830 4750 50  0001 C CNN
 F 3 "~" H 4900 4750 50  0001 C CNN
 	1    4900 4750
 	-1   0    0    1   
@@ -96,10 +85,10 @@ Wire Wire Line
 	5050 4550 4900 4550
 Connection ~ 4900 4550
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5FEA2945
 P 4900 4950
-F 0 "#PWR?" H 4900 4700 50  0001 C CNN
+F 0 "#PWR0101" H 4900 4700 50  0001 C CNN
 F 1 "GND" H 4905 4777 50  0000 C CNN
 F 2 "" H 4900 4950 50  0001 C CNN
 F 3 "" H 4900 4950 50  0001 C CNN
@@ -109,10 +98,10 @@ $EndComp
 Wire Wire Line
 	4900 4950 4900 4900
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0102
 U 1 1 5FEA696F
 P 6200 4100
-F 0 "#PWR?" H 6200 3950 50  0001 C CNN
+F 0 "#PWR0102" H 6200 3950 50  0001 C CNN
 F 1 "+3V3" H 6215 4273 50  0000 C CNN
 F 2 "" H 6200 4100 50  0001 C CNN
 F 3 "" H 6200 4100 50  0001 C CNN
@@ -131,10 +120,10 @@ Wire Wire Line
 Text Label 6700 4400 2    50   ~ 0
 RESET
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5FEA7C0A
 P 7750 4650
-F 0 "#PWR?" H 7750 4400 50  0001 C CNN
+F 0 "#PWR0103" H 7750 4400 50  0001 C CNN
 F 1 "GND" H 7755 4477 50  0000 C CNN
 F 2 "" H 7750 4650 50  0001 C CNN
 F 3 "" H 7750 4650 50  0001 C CNN
@@ -153,21 +142,21 @@ Wire Wire Line
 Text Label 7400 4300 0    50   ~ 0
 GPIO2
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J1
 U 1 1 5FEAAAAB
 P 4300 3500
-F 0 "J?" H 4408 3681 50  0000 C CNN
+F 0 "J1" H 4408 3681 50  0000 C CNN
 F 1 "Arduino3v3" H 4408 3590 50  0000 C CNN
-F 2 "" H 4300 3500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 3500 50  0001 C CNN
 F 3 "~" H 4300 3500 50  0001 C CNN
 	1    4300 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0104
 U 1 1 5FEABA72
 P 4700 3450
-F 0 "#PWR?" H 4700 3300 50  0001 C CNN
+F 0 "#PWR0104" H 4700 3300 50  0001 C CNN
 F 1 "+3V3" H 4715 3623 50  0000 C CNN
 F 2 "" H 4700 3450 50  0001 C CNN
 F 3 "" H 4700 3450 50  0001 C CNN
@@ -179,10 +168,10 @@ Wire Wire Line
 Wire Wire Line
 	4700 3500 4500 3500
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5FEAD4EB
 P 4700 3800
-F 0 "#PWR?" H 4700 3550 50  0001 C CNN
+F 0 "#PWR0105" H 4700 3550 50  0001 C CNN
 F 1 "GND" H 4705 3627 50  0000 C CNN
 F 2 "" H 4700 3800 50  0001 C CNN
 F 3 "" H 4700 3800 50  0001 C CNN
@@ -190,12 +179,12 @@ F 3 "" H 4700 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Male J?
+L Connector:Conn_01x01_Male J2
 U 1 1 5FEAD876
 P 4300 3750
-F 0 "J?" H 4408 3931 50  0000 C CNN
+F 0 "J2" H 4408 3931 50  0000 C CNN
 F 1 "ArduinoGND" H 4408 3840 50  0000 C CNN
-F 2 "" H 4300 3750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4300 3750 50  0001 C CNN
 F 3 "~" H 4300 3750 50  0001 C CNN
 	1    4300 3750
 	1    0    0    -1  
@@ -204,4 +193,15 @@ Wire Wire Line
 	4700 3800 4700 3750
 Wire Wire Line
 	4700 3750 4500 3750
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J5
+U 1 1 5FEB3411
+P 7100 4300
+F 0 "J5" H 7150 4617 50  0000 C CNN
+F 1 "esp8266_conn" H 7150 4526 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 7100 4300 50  0001 C CNN
+F 3 "~" H 7100 4300 50  0001 C CNN
+	1    7100 4300
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
